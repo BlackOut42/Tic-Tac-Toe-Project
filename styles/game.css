@@ -1,59 +1,59 @@
-#active-game{
-    margin:2rem 0 5rem 0;
-    text-align: center;
-    display:none
+#active-game {
+  margin: 2rem 0 5rem 0;
+  text-align: center;
+  display: none;
 }
-#active-game p{
-    font-size: 1.25rem;
+#active-game p {
+  font-size: 1.25rem;
 }
-#winner-text{
-max-width: 40rem;
-width:90%;
-margin: auto;
-padding:2rem 1rem;
-background-color: var(--color-pink-700);
-color: var(--color-orange-300);
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
-display: none;
+#winner-text {
+  max-width: 40rem;
+  width: 90%;
+  margin: auto;
+  padding: 2rem 1rem;
+  background-color: var(--color-pink-700);
+  color: var(--color-orange-300);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: none;
 }
-#winner-text h2{
-    font-size: 2.5rem;
-    margin: 0.5rem 0;
+#winner-text h2 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
 }
-#winner-text p{
-    font-size: 1.25rem;
-    margin: 0;
+#winner-text p {
+  font-size: 1.25rem;
+  margin: 0;
 }
-#active-player-name{
-    font-weight: bold;
-    color:var(--color-pink-700)
+#active-player-name {
+  font-weight: bold;
+  color: var(--color-pink-700);
 }
-#game-board{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(3,6rem);
-    grid-template-rows: repeat(3,6rem);
-    justify-content: center;
-    gap: 0.5rem;
+#game-board {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 6rem);
+  grid-template-rows: repeat(3, 6rem);
+  justify-content: center;
+  gap: 0.5rem;
 }
-#game-board li{
-    background-color: var(--color-pink-700);
-    color:var(--color-orange-100);
-    align-items: center;
-    border-radius: 2px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    font-size: 2.5rem;
-    font-weight: bold;
+#game-board li {
+  background-color: var(--color-pink-700);
+  color: var(--color-orange-100);
+  align-items: center;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
-#game-board li:hover{
-    background-color: var(--color-pink-500);
+#game-board li:hover {
+  background-color: var(--color-pink-500);
 }
-#game-board li.disabled{
-    cursor: default;
-    background-color: var(--color-pink-500);
+#game-board li.disabled {
+  cursor: default;
+  background-color: var(--color-pink-500);
 }
