@@ -3,6 +3,7 @@ function StartNewGame() {
     alert("Enter valid player names before starting!");
     return;
   }
+  
   resetGame();
   gameAreaElement.style.display = "block";
   SetActivePlayerName(startingPlayer);
@@ -13,7 +14,7 @@ function selectGameField(event) {
   const selectedFieldRow = chosenGameField.dataset.row - 1;
   const selectedFieldCol = chosenGameField.dataset.col - 1;
   roundsPlayed++;
-  if (gameData[selectedFieldRow][selectedFieldCol] > 0) {
+  if (gameData[selectedFieldRow][selectedFieldCol] > 0 || gameIsOver) {
     return;
   }
   chosenGameField.textContent = players[activePlayer].symbol;
@@ -83,6 +84,7 @@ function CheckGameOver() {
 }
 //checking who won
 function GameOver(winnerId) {
+  gameIsOver = true;
   if (winnerId > 0) {
     winner.textContent = players[winnerId - 1].name;
     winnerText.style.display = "block";
@@ -95,6 +97,7 @@ function resetGame() {
   currentResult = 0;
   roundsPlayed = 0;
   activePlayer = 0;
+  gameIsOver = false;
   winnerText.style.display = 'none';
 //   another option for game elements reset- OPTION B: gameBoardIndex = 0;
   winnerText.firstElementChild.innerHTML = 'The winner is <span id="winner">Player Name</span>!'

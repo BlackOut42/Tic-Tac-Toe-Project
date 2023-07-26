@@ -17,6 +17,7 @@ const gameAreaElement = document.getElementById("active-game");
 const gameFieldElements = document.querySelectorAll("#game-board li");
 const activePlayerName = document.querySelector("#active-player-name");
 const winnerText = document.querySelector("#winner-text");
+let gameIsOver = false;
 
 
 //For some reason I can't assign 'winner' variable as a constant, 
