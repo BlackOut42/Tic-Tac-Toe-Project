@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="styles/configuration.css" />
     <link rel="stylesheet" href="styles/game.css" />
 
-    <script src="./Scripts/game.js" defer></script>
-    <script src="./Scripts/config.js" defer></script>
-    <script src="./Scripts/app.js" defer></script>
+    <script src="Scripts/game.js" defer></script>
+    <script src="Scripts/config.js" defer></script>
+    <script src="Scripts/app.js" defer></script>
     <title>Play Tic Tac Toe</title>
   </head>
   <body>
@@ -31,7 +31,7 @@
         <form id="edit-form">
           <div class="form-control">
             <label for="playerName">Player name</label>
-            <input type="text" id="playerName" name="playerName" required />
+            <input type="text" id="playerName" name="playerName" required maxlength="10" />
           </div>
           <p id="errorText"></p>
           <div>
