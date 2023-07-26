@@ -1,7 +1,7 @@
 #active-game{
     margin:2rem 0 5rem 0;
     text-align: center;
-    /* display:none */
+    display:none
 }
 #active-game p{
     font-size: 1.25rem;

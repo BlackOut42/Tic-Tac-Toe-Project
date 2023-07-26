@@ -26,6 +26,14 @@
 .form-control input:focus {
   outline: transparent;
 }
+.form-control.error input {
+  background-color: rgb(253, 182, 182);
+  border-color: rgb(161, 13, 13);
+  color: rgb(161, 13, 13);
+}
+.form-control.error label {
+  color: rgb(161, 13, 13);
+}
 #game-configurations {
   text-align: center;
   width: 90%;
@@ -53,7 +61,7 @@
   margin: 0.5rem 0;
 }
 #game-configurations h3 {
-  font-weight:bold;
+  font-weight: bold;
   font-size: 2rem;
   margin: 0.5rem 0;
 }
