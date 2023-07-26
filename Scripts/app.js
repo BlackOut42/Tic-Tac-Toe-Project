@@ -16,7 +16,17 @@ const startGameButtonElement = document.getElementById("start-game-btn");
 const gameAreaElement = document.getElementById("active-game");
 const gameFieldElements = document.querySelectorAll("#game-board li");
 const activePlayerName = document.querySelector("#active-player-name");
+const winnerText = document.querySelector("#winner-text");
+
+
+//For some reason I can't assign 'winner' variable as a constant, 
+//when I try to access it after a reset i.e: changing the inner HTML of the parent I cannot access the variable anymore.
+//had to change it to a regular variable an re assign in after the change.
+let winner = document.querySelector("#winner");
+//
+
 let activePlayer = 0;
+let roundsPlayed = 0;
 const startingPlayer = 0;
 const gameData = [
   [0, 0, 0],
